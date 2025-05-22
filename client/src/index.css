@@ -1,0 +1,148 @@
+body {
+  background: #f5f7fa;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.app-container {
+  padding: 30px 15px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card {
+  background: #ffffff;
+  max-width: 650px;
+  width: 100%;
+  border-radius: 15px;
+  padding: 30px 40px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  user-select: none;
+}
+
+.balance {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 35px;
+  color: #34495e;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.form input,
+.form select {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 1.8px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+  outline: none;
+}
+
+.form input:focus,
+.form select:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+}
+
+.form button {
+  background-color: #3498db;
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.form button:hover {
+  background-color: #2980b9;
+}
+
+.transactions {
+  margin-top: 40px;
+}
+
+.transactions h3 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #34495e;
+  user-select: none;
+}
+
+.transactions ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.transactions li {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 15px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  background-color: #f9f9f9;
+  align-items: center;
+  transition: box-shadow 0.2s ease;
+  user-select: none;
+}
+
+.transactions li:hover {
+  box-shadow: 0 2px 8px rgba(52, 152, 219, 0.15);
+}
+
+.transactions li span {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.transactions li span:nth-child(2) {
+  min-width: 80px;
+  text-align: right;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.transactions li.income {
+  color: #27ae60; /* green */
+}
+
+.transactions li.expense {
+  color: #c0392b; /* red */
+}
+
+.transactions button {
+  margin-left: 15px;
+  color: #e74c3c;
+  background: none;
+  border: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.transactions button:hover {
+  color: #c0392b;
+}
